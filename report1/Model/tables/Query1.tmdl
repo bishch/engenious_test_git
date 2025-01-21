@@ -1,0 +1,20 @@
+﻿table Query1
+
+	column ?column?
+		dataType: int64
+		formatString: 0
+		summarizeBy: sum
+		sourceColumn: ?column?
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Query1 = m
+		mode: import
+		source =
+				let
+				    Source = Value.NativeQuery(AmazonRedshift.Database("us-prod-report-alpha-redshift.cjn5iynjwss7.us-east-1.redshift.amazonaws.com","gehc_data"), "select 1", null, [EnableFolding=true])
+				in
+				    Source
+
+	annotation PBI_ResultType = Table
+
