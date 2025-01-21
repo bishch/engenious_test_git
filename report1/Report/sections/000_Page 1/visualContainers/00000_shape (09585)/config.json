@@ -1,0 +1,49 @@
+{
+  "name": "09585696c5b27b892590",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 471.50595882990251,
+        "y": 144.22535211267606,
+        "z": 0,
+        "width": 391.07258938244854,
+        "height": 389.68580715059591,
+        "tabOrder": 0
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "shape",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "shape": [
+        {
+          "properties": {
+            "tileShape": {
+              "expr": {
+                "Literal": {
+                  "Value": "'triangleIsoc'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "rotation": [
+        {
+          "properties": {
+            "shapeAngle": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "howCreated": "InsertVisualButton"
+}
